@@ -1,0 +1,26 @@
+{
+  "name": "parasitic-numbers",
+  "version": "1.0.0",
+  "description": "A simple function that generates a parasitic number",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgarpf/parasitic-numbers.git"
+  },
+  "keywords": [
+    "parasitic",
+    "number"
+  ],
+  "author": "edgarpf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edgarpf/nth-prime/issues"
+  },
+  "homepage": "https://github.com/edgarpf/parasitic-numbers#readme",
+  "dependencies": {
+    "prime-factors": "^0.1.0"
+  }
+}
