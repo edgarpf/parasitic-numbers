@@ -10,3 +10,5 @@ console.log(parasiticNumber(6,6));
 console.log(parasiticNumber(7,7));
 console.log(parasiticNumber(8,8));
 console.log(parasiticNumber(9,9));
+
+console.log(parasiticNumber(3,5));
