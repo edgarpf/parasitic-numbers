@@ -2,7 +2,9 @@ language: node_js
 node_js: "lts/*"
 
 install:
-  - npm install -g codecov
+  - npm i -g codecov
+  - npm i -g istanbul
+  - npm i -S mocha
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
