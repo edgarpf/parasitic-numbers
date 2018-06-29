@@ -1,4 +1,5 @@
-# parasitic-numbers
+# parasitic-numbers [![Build Status](https://travis-ci.org/edgarpf/parasitic-numbers.svg?branch=master)](https://travis-ci.org/edgarpf/parasitic-numbers) [![codecov](https://codecov.io/gh/edgarpf/parasitic-numbers/branch/master/graph/badge.svg)](https://codecov.io/gh/edgarpf/parasitic-numbers)
+
 A simple function that generates a n-parasitic number(in base 10).
 
 ## Installation
