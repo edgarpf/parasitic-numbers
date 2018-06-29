@@ -1,6 +1,6 @@
 {
   "name": "parasitic-numbers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple function that generates a parasitic number",
   "main": "index.js",
   "scripts": {
