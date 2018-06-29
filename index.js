@@ -7,13 +7,16 @@ function fractionToDecimal(n, d, precision) {
     var pFS = prime_factors(d);
 	
     for (var i = 0; i < pFS.length; i++) {
-        if (pFS[i] !== 2 && pFS[i] !== 5) {         
-            return generateNumber(n,d, precision, new Array(), new Array());
+
+        if (pFS[i] !== 2 && pFS[i] !== 5) {
+            return generateNumber(n,d, precision);           
         }
     }
 }
 
-function generateNumber(n,d, precision, output, ns){
+function generateNumber(n,d, precision){
+	var output = new Array();
+    var ns = new Array();
 	for (var i = 0; i < precision; i++) {
 		var temp2 = parseInt(n / d);
 		
