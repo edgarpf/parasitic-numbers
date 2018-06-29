@@ -8,7 +8,7 @@ npm i -S parasitic-numbers
 
 ## Usage
 ```js
-var nparasitic-numbers = require('parasitic-numbers');
+var parasiticNumber = require('parasitic-numbers');
 
 //Use parasiticNumber(n, k) with k >= n 
 
