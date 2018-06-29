@@ -7,27 +7,26 @@ function fractionToDecimal(n, d, precision) {
     var pFS = prime_factors(d);
 	
     for (var i = 0; i < pFS.length; i++) {
-
-        if (pFS[i] !== 2 && pFS[i] !== 5) {
-
-            var output = new Array();
-            var ns = new Array();
-            
-            for (var i = 0; i < precision; i++) {
-                var temp2 = parseInt(n / d);
-                
-                if (ns[n] === undefined) {
-                    ns[n] = i;
-                } else {
-					return output.slice(ns[n]).join('');
-                }
-                
-                output.push(temp2);
-                
-                var n = n % d;
-                
-                n += "0";
-            }            
+        if (pFS[i] !== 2 && pFS[i] !== 5) {         
+            return generateNumber(n,d, precision, new Array(), new Array());
         }
     }
+}
+
+function generateNumber(n,d, precision, output, ns){
+	for (var i = 0; i < precision; i++) {
+		var temp2 = parseInt(n / d);
+		
+		if (ns[n] === undefined) {
+			ns[n] = i;
+		} else {
+			return output.slice(ns[n]).join('');
+		}
+		
+		output.push(temp2);
+		
+		var n = n % d;
+		
+		n += "0";
+	}
 }
